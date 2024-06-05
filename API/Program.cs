@@ -1,4 +1,7 @@
+using Application;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.OpenApi.Models;
+using Persistence;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,7 +19,14 @@ builder.Services.AddSwaggerGen(c =>
         Title = "Onion Architecture"
     });
 });
-
+builder.Services.AddApplication();
+builder.Services.AddPersistence(builder.Configuration);
+builder.Services.AddApiVersioning(config =>
+{
+    config.DefaultApiVersion = new ApiVersion(1, 0);
+    config.AssumeDefaultVersionWhenUnspecified = true;
+    config.ReportApiVersions = true;
+});
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
