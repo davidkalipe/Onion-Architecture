@@ -113,3 +113,4 @@ C:\Users\david\source\repos\Onion\API\bin\Debug\net8.0\Application.pdb
 C:\Users\david\source\repos\Onion\API\bin\Debug\net8.0\Persistence.pdb
 C:\Users\david\source\repos\Onion\API\bin\Debug\net8.0\Domain.pdb
 C:\Users\david\source\repos\Onion\API\obj\Debug\net8.0\API.sourcelink.json
+C:\Users\david\source\repos\Onion\API\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.Versioning.dll

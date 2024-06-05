@@ -4,5 +4,33 @@
         <name>API</name>
     </assembly>
     <members>
+        <member name="M:API.Controllers.v1.ProductController.Create(Application.Features.ProductFeatures.Commands.CreateProductCommand)">
+            <summary>
+            Create a new product
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.v1.ProductController.GetAll">
+            <summary>
+            Gets all Products
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.v1.ProductController.Update(System.Guid,Application.Features.ProductFeatures.Commands.UpdateProductCommand)">
+            <summary>
+             Updates the Product Entity based on Id
+             </summary>
+             <param name="id"></param>
+             <param name="command"></param>
+             <returns></returns>
+        </member>
+        <member name="M:API.Controllers.v1.ProductController.Delete(System.Guid)">
+            <summary>
+             Deletes product Entity based on Id
+             </summary>
+             <param name="id"></param>
+             <returns></returns>
+        </member>
     </members>
 </doc>
