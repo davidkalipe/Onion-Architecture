@@ -1,4 +1,5 @@
 using System.Reflection;
+using Application.Features.ProductFeatures.Commands;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -8,6 +9,6 @@ public static class DependencyInjection
 {
     public static void AddApplication(this IServiceCollection services)
     {
-        services.AddMediatR(Assembly.GetCallingAssembly());
+        services.AddMediatR(typeof(CreateProductCommand).Assembly);
     }
 }

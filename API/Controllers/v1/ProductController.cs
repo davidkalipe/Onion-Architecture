@@ -15,7 +15,14 @@ public class ProductController : BaseApiController
     [HttpPost]
     public async Task<IActionResult> Create(CreateProductCommand command)
     {
-        return Ok(await Mediator.Send(command));
+        try
+        {
+            return Ok(await Mediator.Send(command));
+        }
+        catch (Exception e)
+        {
+            return StatusCode(500, e.Message);
+        }
     }
     
     /// <summary>
