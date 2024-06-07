@@ -11,6 +11,8 @@ public class ApplicationDbContext : DbContext, IApplicationDbContext
         
     }
     public DbSet<Product> Products { get; set; }
+    public DbSet<Customer> Customers { get; set; }
+
     public async Task<int> SaveChanges()
     {
         return await base.SaveChangesAsync();

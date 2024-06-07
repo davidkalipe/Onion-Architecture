@@ -27,9 +27,15 @@ public class UpdateProductCommand : IRequest<int>
             if (product == null)
                 return default;
             product.Name = command.Name;
+            if (string.IsNullOrEmpty(command.Name))
+                product.Name = product.Name;
             product.BareCode = command.Barcode;
+            if(string.IsNullOrEmpty(command.Barcode))
+                product.BareCode = product.BareCode;
             product.Rate = command.Rate;
             product.Description = command.Description;
+            if(string.IsNullOrEmpty(command.Description))
+                product.Description = product.Description;
             await _context.SaveChanges();
             return 1;
         }

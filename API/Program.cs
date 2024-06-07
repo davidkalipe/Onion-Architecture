@@ -12,7 +12,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
-    c.IncludeXmlComments(string.Format(@"{0}\Onion.xml", AppDomain.CurrentDomain.BaseDirectory));
+    c.IncludeXmlComments(string.Format(@"{0}\OnionArchitecture.xml", AppDomain.CurrentDomain.BaseDirectory));
     c.SwaggerDoc("v1", new OpenApiInfo
     {
         Version = "v1",

@@ -47,9 +47,16 @@ public class ProductController : BaseApiController
     [HttpPut("[action]")]
     public async Task<IActionResult> Update(Guid id, UpdateProductCommand command)
     {
-        if (id != command.Id)
-            return BadRequest();
-        return Ok(await Mediator.Send(command));
+        try
+        {
+            if (id != command.Id)
+                return NotFound("Product not found");
+            return Ok(await Mediator.Send(command));
+        }
+        catch (Exception e)
+        {
+            return StatusCode(500, e.Message);
+        }
     }
     
     ///<summary>
