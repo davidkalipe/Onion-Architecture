@@ -1,3 +1,4 @@
+using API.DTO;
 using Application.Features.ProductFeatures.Commands;
 using Application.Features.ProductFeatures.Queries;
 using Microsoft.AspNetCore.Mvc;
@@ -32,7 +33,9 @@ public class ProductController : BaseApiController
     [HttpGet]
     public async Task<IActionResult> GetAll()
     {
-        return Ok(await Mediator.Send(new GetAllProductsQuery()));
+        var products = await Mediator.Send(new GetAllProductsQuery());
+        var productsDto = Mapper.Map<List<GetAllProductDto>>(products);
+        return Ok(productsDto);
     }
 
     ///<summary>

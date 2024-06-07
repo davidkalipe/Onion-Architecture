@@ -19,6 +19,7 @@ builder.Services.AddSwaggerGen(c =>
         Title = "Onion Architecture"
     });
 });
+builder.Services.AddAutoMapper(typeof(Program));
 builder.Services.AddApplication();
 builder.Services.AddPersistence(builder.Configuration);
 builder.Services.AddApiVersioning(config =>

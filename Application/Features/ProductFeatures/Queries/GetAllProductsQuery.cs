@@ -7,6 +7,11 @@ namespace Application.Features.ProductFeatures.Queries;
 
 public class GetAllProductsQuery : IRequest<IEnumerable<Product>>
 {
+    public string Name { get; set; }
+    public string Barecode { get; set; }
+    public string Description { get; set; }
+    public decimal Rate { get; set; }
+    
     public class GetAllProductsQueryHandler : IRequestHandler<GetAllProductsQuery, IEnumerable<Product>>
     {
         private readonly IApplicationDbContext _context;
