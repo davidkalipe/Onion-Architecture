@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "pYoN3dEd6gEJ5U1XmebWqd9wySPdwASs3cKNoFN3kDbocPsCp2xr20k3ZEFDRXURNqaKvMZeiUDwXxQcYuU+bQ==",
+  "dgSpecHash": "s3CJ3nZcDQ0UWTZH0beECVj+VI4g0IKhFfTK0zLX1pPnYEpy5SMtmE46qz/i+xhY/cdbC886+ne3qa1Hrfco7g==",
   "success": true,
   "projectFilePath": "C:\\Users\\david\\source\\repos\\Onion\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\david\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
+    "C:\\Users\\david\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\david\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\david\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
     "C:\\Users\\david\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",

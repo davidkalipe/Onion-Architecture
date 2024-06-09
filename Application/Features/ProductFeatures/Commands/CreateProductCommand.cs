@@ -10,6 +10,7 @@ public class CreateProductCommand : IRequest<int>
     public string Barecode { get; set; }
     public string Description { get; set; }
     public decimal Rate { get; set; }
+    public Guid CustomerId { get; set; }
     
     public class CreateProductCommandHandler : IRequestHandler<CreateProductCommand, int>
     {
@@ -27,6 +28,7 @@ public class CreateProductCommand : IRequest<int>
             product.Name = command.Name;
             product.Rate = command.Rate;
             product.Description = command.Description;
+            product.CustomerId = command.CustomerId;
             _context.Products.Add(product);
             await _context.SaveChanges();
             return _context.Products.Count();

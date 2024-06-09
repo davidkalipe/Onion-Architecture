@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "W78i01MP1pZDu19oOATkfhpboHUI7ZrCxYPBU76GXfaOzMmPTe7j0szTq1d1vRBYmgGtdDSxi6MJYLmhtv4hpg==",
+  "dgSpecHash": "Ecc12DAcpAg7H2E7JbL+hC+V0sX4msc4Qg33NmqS+j29dr8ATUOb49a5EqxHsB5EW387mC4kIxWfaNJbLn6swg==",
   "success": true,
   "projectFilePath": "C:\\Users\\david\\source\\repos\\Onion\\Persistence\\Persistence.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\david\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\david\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
     "C:\\Users\\david\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
     "C:\\Users\\david\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.1.0\\mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",
