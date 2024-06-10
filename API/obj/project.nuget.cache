@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "s3CJ3nZcDQ0UWTZH0beECVj+VI4g0IKhFfTK0zLX1pPnYEpy5SMtmE46qz/i+xhY/cdbC886+ne3qa1Hrfco7g==",
+  "dgSpecHash": "DV4Az28g5jNsxczf2bhGHrkZtvuO74UqK1B93s9YnilWUuRVSekH3NKzi9MdIOmp1bK4uu6WLQybU2ktA4N/5g==",
   "success": true,
   "projectFilePath": "C:\\Users\\david\\source\\repos\\Onion\\API\\API.csproj",
   "expectedPackageFiles": [
@@ -34,6 +34,10 @@
     "C:\\Users\\david\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\david\\.nuget\\packages\\microsoft.extensions.options\\8.0.0\\microsoft.extensions.options.8.0.0.nupkg.sha512",
     "C:\\Users\\david\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
+    "C:\\Users\\david\\.nuget\\packages\\microsoft.identitymodel.abstractions\\7.6.0\\microsoft.identitymodel.abstractions.7.6.0.nupkg.sha512",
+    "C:\\Users\\david\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\7.6.0\\microsoft.identitymodel.jsonwebtokens.7.6.0.nupkg.sha512",
+    "C:\\Users\\david\\.nuget\\packages\\microsoft.identitymodel.logging\\7.6.0\\microsoft.identitymodel.logging.7.6.0.nupkg.sha512",
+    "C:\\Users\\david\\.nuget\\packages\\microsoft.identitymodel.tokens\\7.6.0\\microsoft.identitymodel.tokens.7.6.0.nupkg.sha512",
     "C:\\Users\\david\\.nuget\\packages\\microsoft.openapi\\1.6.14\\microsoft.openapi.1.6.14.nupkg.sha512",
     "C:\\Users\\david\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
     "C:\\Users\\david\\.nuget\\packages\\npgsql\\8.0.0\\npgsql.8.0.0.nupkg.sha512",
@@ -50,6 +54,7 @@
     "C:\\Users\\david\\.nuget\\packages\\system.composition.hosting\\6.0.0\\system.composition.hosting.6.0.0.nupkg.sha512",
     "C:\\Users\\david\\.nuget\\packages\\system.composition.runtime\\6.0.0\\system.composition.runtime.6.0.0.nupkg.sha512",
     "C:\\Users\\david\\.nuget\\packages\\system.composition.typedparts\\6.0.0\\system.composition.typedparts.6.0.0.nupkg.sha512",
+    "C:\\Users\\david\\.nuget\\packages\\system.identitymodel.tokens.jwt\\7.6.0\\system.identitymodel.tokens.jwt.7.6.0.nupkg.sha512",
     "C:\\Users\\david\\.nuget\\packages\\system.io.pipelines\\6.0.3\\system.io.pipelines.6.0.3.nupkg.sha512",
     "C:\\Users\\david\\.nuget\\packages\\system.reflection.metadata\\6.0.1\\system.reflection.metadata.6.0.1.nupkg.sha512",
     "C:\\Users\\david\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",

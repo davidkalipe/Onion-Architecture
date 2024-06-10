@@ -28,7 +28,6 @@ public class SignInCustomerCommand : IRequest<Customer>
                 if (checkPwd)
                     return customer;
             }
-
             return null;
         }
     }
