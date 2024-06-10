@@ -4,14 +4,14 @@ using MediatR;
 
 namespace Application.Features.CustomerFeatures.Commands;
 
-public class SignUpCustomerCommand : IRequest<int>
+public class SignUpCustomerCommand : IRequest<Customer>
 {
     public string Fullname { get; set; }
     public string Phonenumber { get; set; }
     public string Password { get; set; }
 
 
-    public class SignUpCustomerCommandHandler : IRequestHandler<SignUpCustomerCommand, int>
+    public class SignUpCustomerCommandHandler : IRequestHandler<SignUpCustomerCommand, Customer>
     {
         private readonly IApplicationDbContext _context;
         public SignUpCustomerCommandHandler(IApplicationDbContext context)
@@ -19,7 +19,7 @@ public class SignUpCustomerCommand : IRequest<int>
             _context = context;
         }
         
-        public async Task<int> Handle(SignUpCustomerCommand request, CancellationToken cancellationToken)
+        public async Task<Customer> Handle(SignUpCustomerCommand request, CancellationToken cancellationToken)
         {
             var hashPwd = BCrypt.Net.BCrypt.HashPassword(request.Password);
             var customer = new Customer();
@@ -28,7 +28,7 @@ public class SignUpCustomerCommand : IRequest<int>
             customer.Password = hashPwd;
             _context.Customers.Add(customer);
             await _context.SaveChanges();
-            return _context.Customers.Count();
+            return customer;
         }
     }
 }
