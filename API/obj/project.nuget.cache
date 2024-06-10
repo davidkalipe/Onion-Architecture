@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "DV4Az28g5jNsxczf2bhGHrkZtvuO74UqK1B93s9YnilWUuRVSekH3NKzi9MdIOmp1bK4uu6WLQybU2ktA4N/5g==",
+  "dgSpecHash": "L8uKfXBemDovTAR+VaiF2qFzYO29bJSO4bipN90lKht6NGjoCNyLdtAilb2QqHGrKOM5dCc2Shm3NOOZQQD0Yw==",
   "success": true,
   "projectFilePath": "C:\\Users\\david\\source\\repos\\Onion\\API\\API.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,7 @@
     "C:\\Users\\david\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
     "C:\\Users\\david\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
     "C:\\Users\\david\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.1.0\\mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",
+    "C:\\Users\\david\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.0\\microsoft.aspnetcore.authentication.jwtbearer.8.0.0.nupkg.sha512",
     "C:\\Users\\david\\.nuget\\packages\\microsoft.aspnetcore.mvc.versioning\\5.1.0\\microsoft.aspnetcore.mvc.versioning.5.1.0.nupkg.sha512",
     "C:\\Users\\david\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\david\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.3\\microsoft.codeanalysis.analyzers.3.3.3.nupkg.sha512",
@@ -37,6 +38,8 @@
     "C:\\Users\\david\\.nuget\\packages\\microsoft.identitymodel.abstractions\\7.6.0\\microsoft.identitymodel.abstractions.7.6.0.nupkg.sha512",
     "C:\\Users\\david\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\7.6.0\\microsoft.identitymodel.jsonwebtokens.7.6.0.nupkg.sha512",
     "C:\\Users\\david\\.nuget\\packages\\microsoft.identitymodel.logging\\7.6.0\\microsoft.identitymodel.logging.7.6.0.nupkg.sha512",
+    "C:\\Users\\david\\.nuget\\packages\\microsoft.identitymodel.protocols\\7.0.3\\microsoft.identitymodel.protocols.7.0.3.nupkg.sha512",
+    "C:\\Users\\david\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\7.0.3\\microsoft.identitymodel.protocols.openidconnect.7.0.3.nupkg.sha512",
     "C:\\Users\\david\\.nuget\\packages\\microsoft.identitymodel.tokens\\7.6.0\\microsoft.identitymodel.tokens.7.6.0.nupkg.sha512",
     "C:\\Users\\david\\.nuget\\packages\\microsoft.openapi\\1.6.14\\microsoft.openapi.1.6.14.nupkg.sha512",
     "C:\\Users\\david\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",

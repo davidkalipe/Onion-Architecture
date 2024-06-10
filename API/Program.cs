@@ -2,6 +2,7 @@ using System.Text;
 using Application;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.OpenApi.Models;
 using Persistence;
 using Security;
@@ -62,7 +63,7 @@ builder.Services.AddAuthentication(opt =>
             IssuerSigningKey =
                 new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["AppSettings:Key"]!))
         };
-    });)
+    });
 builder.Services.AddAutoMapper(typeof(Program));
 builder.Services.AddApplication();
 builder.Services.AddPersistence(builder.Configuration);

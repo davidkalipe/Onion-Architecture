@@ -115,3 +115,14 @@ C:\Users\david\source\repos\Onion\API\obj\Debug\net8.0\API.sourcelink.json
 C:\Users\david\source\repos\Onion\API\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.Versioning.dll
 C:\Users\david\source\repos\Onion\API\bin\Debug\net8.0\AutoMapper.dll
 C:\Users\david\source\repos\Onion\API\bin\Debug\net8.0\OnionArchitecture.xml
+C:\Users\david\source\repos\Onion\API\bin\Debug\net8.0\BCrypt.Net-Next.dll
+C:\Users\david\source\repos\Onion\API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\david\source\repos\Onion\API\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\david\source\repos\Onion\API\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\david\source\repos\Onion\API\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\david\source\repos\Onion\API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\david\source\repos\Onion\API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\david\source\repos\Onion\API\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\david\source\repos\Onion\API\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\david\source\repos\Onion\API\bin\Debug\net8.0\Security.dll
+C:\Users\david\source\repos\Onion\API\bin\Debug\net8.0\Security.pdb
