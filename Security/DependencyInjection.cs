@@ -1,11 +1,12 @@
 using Microsoft.Extensions.DependencyInjection;
+using Security.Jwt;
 
 namespace Security;
 
-public class DependencyInjection
+public static class DependencyInjection
 {
     public static void AddSecurity(this IServiceCollection service)
     {
-        service.
+        service.AddScoped<JwtConfig>();
     }
 }
