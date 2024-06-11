@@ -4,6 +4,20 @@
         <name>API</name>
     </assembly>
     <members>
+        <member name="M:API.Controllers.v1.CustomerController.SignUp(Application.Features.CustomerFeatures.Commands.SignUpCustomerCommand)">
+            <summary>
+            Customer signUp
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.v1.CustomerController.SignIn(Application.Features.CustomerFeatures.Commands.SignInCustomerCommand)">
+            <summary>
+            Customer signIn
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
         <member name="M:API.Controllers.v1.ProductController.Create(Application.Features.ProductFeatures.Commands.CreateProductCommand)">
             <summary>
             Create a new product
