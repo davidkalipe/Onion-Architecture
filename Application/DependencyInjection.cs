@@ -1,4 +1,3 @@
-using System.Reflection;
 using Application.Features.ProductFeatures.Commands;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;

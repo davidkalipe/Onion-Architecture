@@ -2,6 +2,7 @@ using Application.Interfaces;
 using AutoMapper;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using Security.Jwt;
 
 namespace API.Controllers;
 [ApiController]
@@ -13,7 +14,7 @@ public abstract class BaseApiController : ControllerBase
     private ITokenGenerator _tokenGenerator;
     protected ITokenValidator _tokenValidator;
     protected ITokenValidator TokenValidator => _tokenValidator??= HttpContext.RequestServices.GetService<ITokenValidator>();
-    protected ITokenGenerator TokenGenerator => _tokenGenerator??= HttpContext.RequestServices.GetService<ITokenGenerator>();
+    protected ITokenGenerator TokenGenerator => _tokenGenerator??= HttpContext.RequestServices.GetService<TokenGeneration>();
     protected IMediator Mediator => _mediator ??= HttpContext.RequestServices.GetService<IMediator>();
     protected IMapper Mapper => _mapper??= HttpContext.RequestServices.GetService<IMapper>();
 }

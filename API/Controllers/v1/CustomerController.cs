@@ -8,6 +8,11 @@ namespace API.Controllers.v1;
 [ApiVersion("1.0")]
 public class CustomerController : BaseApiController
 {
+    /// <summary>
+    /// Customer signUp
+    /// </summary>
+    /// <param name="command"></param>
+    /// <returns></returns>
     [HttpPost("SignUp")]
     public async Task<IActionResult> SignUp(SignUpCustomerCommand command)
     {
@@ -22,10 +27,12 @@ public class CustomerController : BaseApiController
             return StatusCode(500, e.Message);
         }
     }
-
-
-
-
+    
+    /// <summary>
+    /// Customer signIn
+    /// </summary>
+    /// <param name="command"></param>
+    /// <returns></returns>
     [HttpPost("SignIn")]
     public async Task<IActionResult> SignIn(SignInCustomerCommand command)
     {

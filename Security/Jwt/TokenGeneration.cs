@@ -11,10 +11,10 @@ public class TokenGeneration : ITokenGenerator
 {
     private readonly IJwtConfig _jwtConfig;
 
-    // public JwtTokenGenerator(IJwtConfig jwtConfig)
-    // {
-    //     _jwtConfig = jwtConfig;
-    // }
+    public TokenGeneration(IJwtConfig jwtConfig)
+    {
+        _jwtConfig = jwtConfig;
+    }
 
     public string CreateCustomerToken(Customer customer)
     {
