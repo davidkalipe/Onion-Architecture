@@ -26,7 +26,7 @@ public class CustomerController : BaseApiController
 
 
 
-    [HttpPost("SignIn"), Authorize]
+    [HttpPost("SignIn")]
     public async Task<IActionResult> SignIn(SignInCustomerCommand command)
     {
         try
