@@ -8,6 +8,11 @@ namespace Application.Features.ProductFeatures.Queries;
 public class GetAllProductsQuery : IRequest<IEnumerable<Product>>
 {
     public string CustomerPhonenumber { get; set; }
+
+    public GetAllProductsQuery(string customerPhonenumber)
+    {
+        CustomerPhonenumber = customerPhonenumber;
+    }
     
     public class GetAllProductsQueryHandler : IRequestHandler<GetAllProductsQuery, IEnumerable<Product>>
     {

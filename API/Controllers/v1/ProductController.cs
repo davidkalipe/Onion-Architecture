@@ -15,7 +15,7 @@ public class ProductController : BaseApiController
     /// </summary>
     /// <param name="command"></param>
     /// <returns></returns>
-    [HttpPost]
+    [HttpPost, Authorize]
     public async Task<IActionResult> Create(CreateProductCommand command)
     {
         try
@@ -41,7 +41,8 @@ public class ProductController : BaseApiController
             var isvalid = TokenValidator.IsTokenValid(token);
             if (!isvalid) return Unauthorized("Token is not valid");
             var customerPhonenumber = DecodeToken.DecodeJwt(token);
-            var products = await Mediator.Send(customerPhonenumber);
+            var products = await Mediator.Send(new GetAllProductsQuery(customerPhonenumber));
+            if (products == null) return NotFound();
             var productsDto = Mapper.Map<List<GetAllProductDto>>(products);
             return Ok(productsDto);
         }
