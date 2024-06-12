@@ -18,7 +18,7 @@
             <param name="command"></param>
             <returns></returns>
         </member>
-        <member name="M:API.Controllers.v1.ProductController.Create(Application.Features.ProductFeatures.Commands.CreateProductCommand)">
+        <member name="M:API.Controllers.v1.ProductController.Create(API.DTO.CreateProductDto)">
             <summary>
             Create a new product
             </summary>

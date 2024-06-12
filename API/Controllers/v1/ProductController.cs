@@ -16,10 +16,22 @@ public class ProductController : BaseApiController
     /// <param name="command"></param>
     /// <returns></returns>
     [HttpPost, Authorize]
-    public async Task<IActionResult> Create(CreateProductCommand command)
+    public async Task<IActionResult> Create(CreateProductDto createProductDto)
     {
         try
         {
+            var token = HttpContext.Request.Headers["Authorization"].ToString().Split(" ")[1];
+            var isvalid = TokenValidator.IsTokenValid(token);
+            if (!isvalid) return Unauthorized("Token is not valid");
+            var customerPhone = DecodeToken.DecodeJwt(token);
+            var command = new CreateProductCommand
+            {
+                Name = createProductDto.Name,
+                Barecode = createProductDto.Barecode,
+                Description = createProductDto.Description,
+                Rate = createProductDto.Rate,
+                CustomerPhone = customerPhone
+            };
             return Ok(await Mediator.Send(command));
         }
         catch (Exception e)
