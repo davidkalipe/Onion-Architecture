@@ -1,6 +1,7 @@
 using API.DTO;
 using Application.Features.ProductFeatures.Commands;
 using Application.Features.ProductFeatures.Queries;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers.v1;
@@ -30,9 +31,13 @@ public class ProductController : BaseApiController
     /// Gets all Products
     /// </summary>
     /// <returns></returns>
-    [HttpGet]
+    [HttpGet("GetAllProducts"), Authorize]
     public async Task<IActionResult> GetAll()
     {
+        var token = HttpContext.Request.Headers["Authorization"].ToString().Split(" ")[1];
+        var isvalid = TokenValidator.IsTokenValid(token);
+        if(!isvalid) return Unauthorized("Token is not valid")
+        var     
         var products = await Mediator.Send(new GetAllProductsQuery());
         var productsDto = Mapper.Map<List<GetAllProductDto>>(products);
         return Ok(productsDto);
