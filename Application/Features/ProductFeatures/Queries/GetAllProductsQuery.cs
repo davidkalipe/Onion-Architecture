@@ -7,10 +7,7 @@ namespace Application.Features.ProductFeatures.Queries;
 
 public class GetAllProductsQuery : IRequest<IEnumerable<Product>>
 {
-    public string Name { get; set; }
-    public string Barecode { get; set; }
-    public string Description { get; set; }
-    public decimal Rate { get; set; }
+    public string CustomerPhonenumber { get; set; }
     
     public class GetAllProductsQueryHandler : IRequestHandler<GetAllProductsQuery, IEnumerable<Product>>
     {
@@ -23,9 +20,14 @@ public class GetAllProductsQuery : IRequest<IEnumerable<Product>>
         
         public async Task<IEnumerable<Product>> Handle(GetAllProductsQuery query, CancellationToken cancellationToken)
         {
-            var productlist = await _context.Products.ToListAsync();
-            if (productlist == null) return null;
-            return productlist.AsReadOnly();
+            var customer = await _context.Customers.Where(c => c.Phonenumber == query.CustomerPhonenumber).FirstOrDefaultAsync();
+            if(customer != null)
+            {
+                var productlist = await _context.Products.Where(p=>p.CustomerId == customer.Id).ToListAsync();
+                if (productlist == null) return null;
+                return productlist.AsReadOnly();
+            }
+            return null;
         }
     }
 }

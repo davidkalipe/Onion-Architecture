@@ -9,10 +9,10 @@ public class TokenValidator : ITokenValidator
 {
     private readonly IJwtConfig _jwtConfig;
 
-    // public JwtTokenValidator(IJwtConfig jwtConfig)
-    // {
-    //     _jwtConfig = jwtConfig;
-    // }
+    public TokenValidator(IJwtConfig jwtConfig)
+    {
+        _jwtConfig = jwtConfig;
+    }
 
     public bool IsTokenValid(string token)
     {

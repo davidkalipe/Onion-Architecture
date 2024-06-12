@@ -13,6 +13,8 @@ public abstract class BaseApiController : ControllerBase
     private IMapper _mapper;
     private ITokenGenerator _tokenGenerator;
     protected ITokenValidator _tokenValidator;
+    protected IDecodeToken _decodeToken;
+    protected IDecodeToken DecodeToken => _decodeToken??= HttpContext.RequestServices.GetService<IDecodeToken>();
     protected ITokenValidator TokenValidator => _tokenValidator??= HttpContext.RequestServices.GetService<ITokenValidator>();
     protected ITokenGenerator TokenGenerator => _tokenGenerator??= HttpContext.RequestServices.GetService<TokenGeneration>();
     protected IMediator Mediator => _mediator ??= HttpContext.RequestServices.GetService<IMediator>();
